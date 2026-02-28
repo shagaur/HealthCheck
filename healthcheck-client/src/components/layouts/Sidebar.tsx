@@ -207,11 +207,11 @@ export default function Sidebar({ role }: SidebarProps) {
   const filteredMenu = filterMenuByRole(menuItems, role);
 
   return (
-    <aside className="w-64 bg-[#0E1D34] text-white flex flex-col h-screen">
+    <aside className="w-64 bg-primary text-text-primary flex flex-col h-screen">
       <div className="h-14 flex items-center px-6 font-semibold">
         <div className="flex items-center gap-2">
           <img src="/assets/logo.png" width={40} height={40} alt="" />
-          <span className="text-xl">{import.meta.env.VITE_APP_NAME}</span>
+          <span className="text-xl text-white">{import.meta.env.VITE_APP_NAME}</span>
         </div>
       </div>
       <nav className="flex-1 overflow-y-auto px-4 py-6">
