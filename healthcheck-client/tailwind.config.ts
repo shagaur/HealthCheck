@@ -35,6 +35,9 @@ export default {
 
         border: "var(--color-border)",
       },
+      fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui"],
+      },
     },
   },
   plugins: [],

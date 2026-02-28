@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+}
 
 :root {
   /* Primary - Medical Teal */

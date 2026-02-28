@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoutes";
 
-import Login from "../pages/auth/Login";
+import Login from "../auth/Login";
 import Dashboard from "../pages/dashboard/Dashboard";
 import UserList from "../pages/users/UserList";
-import Layout from "../pages/components/layouts/Layout";
+import Layout from "../components/layouts/Layout";
 
 const isAuthenticated = true; // later from Redux
 
