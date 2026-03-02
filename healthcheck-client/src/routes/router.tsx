@@ -2,9 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoutes";
 
 import Login from "../auth/Login";
-import Dashboard from "../pages/dashboard/Dashboard";
-import UserList from "../pages/users/UserList";
 import Layout from "../components/layouts/Layout";
+import DashboardLayout from "../pages/dashboard/DashboardLayout";
+import OrgLayout from "../pages/organization/OrgLayout";
+import OrgDashboard from "../features/organization/pages/OrgDashboard";
+import UserLayout from "../pages/user/UserLayout";
+import OrgListPage from "../features/organization/pages/OrgListPage";
 
 const isAuthenticated = true; // later from Redux
 
@@ -24,16 +27,30 @@ export const router = createBrowserRouter([
         element: <Layout />,
         children: [
           {
-            path: "/dashboard",
-            element: <Dashboard />,
+            path: "dashboard",
+            element: <DashboardLayout />,
           },
           {
-            path: "/users",
-            element: <UserList />,
+            path: "users",
+            element: <UserLayout />,
           },
           {
-            path: "/users-roles",
-            element: <UserList />,
+            path: "users-roles",
+            element: <UserLayout />,
+          },
+          {
+            path: "org",
+            element: <OrgListPage />,
+          },
+          {
+            path: "org/:orgId",
+            element: <OrgLayout />,
+            children: [
+              {
+                index: true,
+                element: <OrgDashboard />,
+              },
+            ],
           },
         ],
       },

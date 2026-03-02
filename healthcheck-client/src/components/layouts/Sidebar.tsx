@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Dashboard",
     type: "item",
-    path: "/dashboard",
+    path: "dashboard",
     icon: <FiHome />,
     roles: ["admin", "doctor", "staff"],
     children: [],
@@ -30,7 +30,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Organization",
     type: "item",
-    path: "/organization",
+    path: "org",
     icon: <FiHome />,
     roles: ["admin", "doctor", "staff"],
     children: [],
@@ -38,7 +38,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Offices",
     type: "item",
-    path: "/office",
+    path: "office",
     icon: <FiHome />,
     roles: ["admin", "doctor", "staff"],
     children: [],
@@ -52,7 +52,7 @@ const menuItems: MenuItem[] = [
       {
         label: "Users",
         type: "item",
-        path: "/users",
+        path: "users",
         icon: <FiHome />,
         roles: ["admin", "doctor", "staff"],
         children: [],
@@ -60,7 +60,7 @@ const menuItems: MenuItem[] = [
       {
         label: "Roles",
         type: "item",
-        path: "/roles",
+        path: "roles",
         icon: <FiHome />,
         roles: ["admin", "doctor", "staff"],
         children: [],
@@ -75,7 +75,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Patients",
     type: "item",
-    path: "/patients",
+    path: "patients",
     icon: <FiUsers />,
     roles: ["admin", "doctor", "staff"],
     children: [],
@@ -83,7 +83,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Appointments",
     type: "item",
-    path: "/appointments",
+    path: "appointments",
     icon: <FiHome />,
     roles: ["admin", "doctor", "staff"],
     children: [],
@@ -91,7 +91,7 @@ const menuItems: MenuItem[] = [
   {
     label: "Patient Visits",
     type: "item",
-    path: "/visits",
+    path: "visits",
     icon: <FiUserCheck />,
     roles: ["admin", "doctor", "staff"],
     children: [],
