@@ -8,6 +8,7 @@ import OrgLayout from "../pages/organization/OrgLayout";
 import OrgDashboard from "../features/organization/pages/OrgDashboard";
 import UserLayout from "../pages/user/UserLayout";
 import OrgListPage from "../features/organization/pages/OrgListPage";
+import NotFound from "../pages/NotFound";
 
 const isAuthenticated = true; // later from Redux
 
@@ -55,5 +56,9 @@ export const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
